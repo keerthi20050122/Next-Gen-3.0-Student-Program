@@ -3,3 +3,57 @@ Unsolved Practical: Create an HTML document that includes a navigation bar with 
 •	Apply equal spacing between the links.
 •	Center the links vertically within the navigation bar.
 •	Add padding and a background color to each link when hovered over.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+.nav-bar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
