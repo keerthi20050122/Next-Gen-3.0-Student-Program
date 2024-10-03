@@ -4,3 +4,64 @@ Unsolved Practical:  Create a simple JavaScript program that simulates a basic p
 •	Log all the variables to the console.
 •	Display a summary of the information on the webpage using document.write.
 •	Include comments to explain each part of the code
+
+
+
+
+// Student Information Object
+let student = {
+  name: "Jane Smith",
+  age: 20,
+  major: "Computer Science",
+  GPA: 3.8,
+  courses: ["Data Structures", "Algorithms", "Web Development"],
+};
+
+// Function to display student information
+function displayInfo() {
+  document.write("<h1>Student Information</h1>");
+  document.write("<p>Name: " + student.name + "</p>");
+  document.write("<p>Age: " + student.age + "</p>");
+  document.write("<p>Major: " + student.major + "</p>");
+  document.write("<p>GPA: " + student.GPA + "</p>");
+  document.write("<p>Courses: " + student.courses.join(", ") + "</p>");
+}
+
+// Function to add a new course
+function addCourse(course) {
+  student.courses.push(course);
+  console.log(course + " added to courses.");
+}
+
+// Function to update GPA
+function updateGPA(newGPA) {
+  student.GPA = newGPA;
+  console.log("GPA updated to " + newGPA + ".");
+}
+
+// Log student information to console
+console.log("Student Name:", student.name);
+console.log("Age:", student.age);
+console.log("Major:", student.major);
+console.log("GPA:", student.GPA);
+console.log("Courses:", student.courses);
+
+// Display student information on webpage
+displayInfo();
+
+// Add a new course
+addCourse("Machine Learning");
+
+// Update GPA
+updateGPA(3.9);
+
+
+Explanation:
+
+1. An object student stores student information.
+2. displayInfo function displays student information on the webpage.
+3. addCourse function adds a new course to the student's courses array.
+4. updateGPA function updates the student's GPA.
+5. Student information is logged to the console.
+6. Student information is displayed on the webpage.
+
